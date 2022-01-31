@@ -1,0 +1,24 @@
+{
+  "name": "73js",
+  "version": "0.0.1",
+  "description": "In 7, out 3, in 3 - out 7. other than that? Anything goes!",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanokhaloni/73js.git"
+  },
+  "keywords": [
+    "javascript",
+    "7",
+    "3"
+  ],
+  "author": "Hanokh Aloni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hanokhaloni/73js/issues"
+  },
+  "homepage": "https://github.com/hanokhaloni/73js#readme"
+}
