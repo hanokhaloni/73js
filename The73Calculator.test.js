@@ -37,6 +37,12 @@ describe("The73Calculator", () => {
     test(The73Calculator.stringReplaceNumber.name, () => {
         expectBehavior(The73Calculator.stringReplaceNumber);
     });
+    test(The73Calculator.usingModulo.name, () => {
+        expectBehavior(The73Calculator.usingModulo);
+    });
+    test(The73Calculator.usingObjectMap.name, () => {
+        expectBehavior(The73Calculator.usingObjectMap);
+    });
 
     function expectBehavior(f) {
         expect(f(3)).toBe(7);

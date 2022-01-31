@@ -29,6 +29,12 @@ suite.add(The73Calculator.useif.name, () => {
     .add(The73Calculator.stringReplaceNumber.name, () => {
         expectBehavior(The73Calculator.stringReplaceNumber);
     })
+    .add(The73Calculator.usingModulo.name, () => {
+        expectBehavior(The73Calculator.usingModulo);
+    })
+    .add(The73Calculator.usingObjectMap.name, () => {
+        expectBehavior(The73Calculator.usingObjectMap);
+    })
     .add(The73Calculator.fail.name, () => {
         expectBehavior(The73Calculator.fail);
     })

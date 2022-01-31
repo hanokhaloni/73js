@@ -42,6 +42,20 @@ module.exports = class The73Calculator {
         return Number("37".replace(n, ""));
     }
 
+    static usingModulo(n) {
+        return ((n + 4) % 8);
+    }
+
+    static usingObjectMap(n) {
+        const objmapper = {
+            3: 7,
+            7: 3
+        };
+        return objmapper[n];
+    }
+
+
+
     static fail(n) {
         return n;
     }
