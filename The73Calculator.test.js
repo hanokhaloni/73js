@@ -16,6 +16,9 @@ describe("The73Calculator", () => {
         expectBehavior(The73Calculator.useif);
     });
 
+    test(The73Calculator.useifeq.name, () => {
+        expectBehavior(The73Calculator.useifeq);
+    });
     test(The73Calculator.useXor.name, () => {
         expectBehavior(The73Calculator.useXor);
     });
@@ -43,6 +46,12 @@ describe("The73Calculator", () => {
     test(The73Calculator.usingObjectMap.name, () => {
         expectBehavior(The73Calculator.usingObjectMap);
     });
+    test(The73Calculator.usingPolynom.name, () => {
+        expectBehavior(The73Calculator.usingPolynom);
+    });
+
+
+
 
     function expectBehavior(f) {
         expect(f(3)).toBe(7);

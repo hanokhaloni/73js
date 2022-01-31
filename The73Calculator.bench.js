@@ -8,6 +8,9 @@ const The73Calculator = require("./The73Calculator.js");
 suite.add(The73Calculator.useif.name, () => {
         expectBehavior(The73Calculator.useif);
     })
+    .add(The73Calculator.useifeq.name, () => {
+        expectBehavior(The73Calculator.useifeq);
+    })
     .add(The73Calculator.useXor.name, () => {
         expectBehavior(The73Calculator.useXor);
     })
@@ -35,9 +38,15 @@ suite.add(The73Calculator.useif.name, () => {
     .add(The73Calculator.usingObjectMap.name, () => {
         expectBehavior(The73Calculator.usingObjectMap);
     })
-    .add(The73Calculator.fail.name, () => {
-        expectBehavior(The73Calculator.fail);
+    .add(The73Calculator.usingPolynom.name, () => {
+        expectBehavior(The73Calculator.usingPolynom);
     })
+    // .add(The73Calculator.fail.name, () => {
+    //     expectBehavior(The73Calculator.fail);
+    // })
+    // .add(The73Calculator.noop.name, () => {
+    //     expectBehavior(The73Calculator.noop);
+    // })
     // add listeners
     .on('cycle', function(event) {
         console.log(String(event.target));
@@ -49,8 +58,10 @@ suite.add(The73Calculator.useif.name, () => {
     .run({ 'async': true });
 
 function expectBehavior(f) {
-    f(3);
-    f(7);
+    for (var i = 0; i < 100000; i++) {
+        f(3);
+        f(7);
+    }
 }
 
 // logs:

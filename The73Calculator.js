@@ -2,9 +2,15 @@ module.exports = class The73Calculator {
     constructor() {}
 
     static useif(n) {
+        if (n == 3) return 7;
+        return 3;
+    }
+
+    static useifeq(n) {
         if (n === 3) return 7;
         return 3;
     }
+
 
     static useXor(n) {
         return (n ^= 4);
@@ -54,11 +60,14 @@ module.exports = class The73Calculator {
         return objmapper[n];
     }
 
-
+    static usingPolynom(n) {
+        return ((79 - (n * n)) / 10);
+    }
 
     static fail(n) {
         return n;
     }
 
+    static noop(n) {}
 
 };
