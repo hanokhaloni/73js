@@ -1,5 +1,8 @@
-var Benchmark = require('benchmark');
-var suite = new Benchmark.Suite;
+// Import the benchtable module
+var BenchTable = require('benchtable');
+
+// Create benchtable suite
+var suite = new BenchTable();
 
 const The73Calculator = require("./The73Calculator.js");
 
@@ -41,18 +44,33 @@ suite.add(The73Calculator.useif.name, () => {
     .add(The73Calculator.usingPolynom.name, () => {
         expectBehavior(The73Calculator.usingPolynom);
     })
-    // .add(The73Calculator.fail.name, () => {
-    //     expectBehavior(The73Calculator.fail);
-    // })
-    // .add(The73Calculator.noop.name, () => {
-    //     expectBehavior(The73Calculator.noop);
-    // })
+    .add(The73Calculator.fail.name, () => {
+        expectBehavior(The73Calculator.fail);
+    })
+    .add(The73Calculator.noop.name, () => {
+        expectBehavior(The73Calculator.noop);
+    })
     // add listeners
     .on('cycle', function(event) {
         console.log(String(event.target));
     })
     .on('complete', function() {
+        var report = [];
+        for (var i = 0; i < this.length; i++) {
+            //console.log(this[i]);
+            var item = {};
+            item.name = this[i].name;
+            item.hz = this[i].hz;
+            item.deviation = this[i].deviation;
+            //console.log(this[i].stats);
+            report.push(item);
+        }
+
+        report.sort((a, b) => (b.hz - a.hz));
+        report.forEach(r => console.log(r.name + " - " + r.hz));
         console.log('Fastest is ' + this.filter('fastest').map('name'));
+
+        console.log('Slowest is ' + this.filter('slowest').map('name'));
     })
     // run async
     .run({ 'async': true });
