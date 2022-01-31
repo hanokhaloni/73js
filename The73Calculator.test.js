@@ -1,6 +1,6 @@
 const The73Calculator = require("./The73Calculator.js");
 
-describe("Validator", () => {
+describe("The73Calculator", () => {
     //const the73Calculator = new The73Calculator();
 
     test("useif", () => {

@@ -1,4 +1,4 @@
-module.exports = class the73Calculator {
+module.exports = class The73Calculator {
     constructor() {}
 
     static useif(n) {
