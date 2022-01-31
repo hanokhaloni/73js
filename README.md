@@ -29,3 +29,15 @@ It seems like there is a fourth way... any suggestions? */
 ## Why?
 
 That's actually a good question. I guess that discovery does not happen with a set target in mind!
+
+# How to run?
+
+from console, install jest
+```
+npm install --save-dev jest
+```
+
+then you can just run the tests
+```
+npm test
+```
