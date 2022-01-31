@@ -1,22 +1,36 @@
 var Benchmark = require('benchmark');
 var suite = new Benchmark.Suite;
 
-
 const The73Calculator = require("./The73Calculator.js");
 
 
 // add tests
-suite.add('useif', () => {
-        The73Calculator.useif(3);
-        The73Calculator.useif(7);
+suite.add(The73Calculator.useif.name, () => {
+        expectBehavior(The73Calculator.useif);
     })
-    .add('useXor', () => {
-        The73Calculator.useXor(3);
-        The73Calculator.useXor(7);
+    .add(The73Calculator.useXor.name, () => {
+        expectBehavior(The73Calculator.useXor);
     })
-    .add('useArray', () => {
-        The73Calculator.useArray(3);
-        The73Calculator.useArray(7);
+    .add(The73Calculator.useArray.name, () => {
+        expectBehavior(The73Calculator.useArray);
+    })
+    .add(The73Calculator.usingSwitch.name, () => {
+        expectBehavior(The73Calculator.usingSwitch);
+    })
+    .add(The73Calculator.minus.name, () => {
+        expectBehavior(The73Calculator.minus);
+    })
+    .add(The73Calculator.division.name, () => {
+        expectBehavior(The73Calculator.division);
+    })
+    .add(The73Calculator.stringReplaceParseInt.name, () => {
+        expectBehavior(The73Calculator.stringReplaceParseInt);
+    })
+    .add(The73Calculator.stringReplaceNumber.name, () => {
+        expectBehavior(The73Calculator.stringReplaceNumber);
+    })
+    .add(The73Calculator.fail.name, () => {
+        expectBehavior(The73Calculator.fail);
     })
     // add listeners
     .on('cycle', function(event) {
@@ -27,6 +41,11 @@ suite.add('useif', () => {
     })
     // run async
     .run({ 'async': true });
+
+function expectBehavior(f) {
+    f(3);
+    f(7);
+}
 
 // logs:
 // => RegExp#test x 4,161,532 +-0.99% (59 cycles)

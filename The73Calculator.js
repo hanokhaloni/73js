@@ -26,11 +26,25 @@ module.exports = class The73Calculator {
         }
     }
 
+    static minus(n) {
+        return 10 - n;
+    }
+
     static division(n) {
         return 21 / n;
     }
 
-    static stringReplace(n) {
-        return "37".replace(n, "");
+    static stringReplaceParseInt(n) {
+        return parseInt("37".replace(n, ""));
     }
+
+    static stringReplaceNumber(n) {
+        return Number("37".replace(n, ""));
+    }
+
+    static fail(n) {
+        return n;
+    }
+
+
 };

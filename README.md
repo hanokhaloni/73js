@@ -41,3 +41,8 @@ then you can just run the tests
 ```
 npm test
 ```
+
+if you want to benchmark use
+```
+npm run bench
+```
