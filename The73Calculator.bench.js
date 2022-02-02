@@ -1,5 +1,5 @@
 var Benchmark = require('benchmark');
-var suite = new Benchmark.Suite();
+var suite = new Benchmark.Suite;
 
 const The73Calculator = require("./The73Calculator.js");
 
