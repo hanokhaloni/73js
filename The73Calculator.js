@@ -60,6 +60,15 @@ module.exports = class The73Calculator {
         return objmapper[n];
     }
 
+    static usingIndexerDictionary(n) {
+        const dict = {};
+
+        dict[3] = 7;
+        dict[7] = 3;
+
+        return dict[n];
+    }
+
     static usingPolynom(n) {
         return ((79 - (n * n)) / 10);
     }
