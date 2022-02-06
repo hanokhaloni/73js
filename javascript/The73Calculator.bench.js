@@ -1,8 +1,5 @@
-// Import the benchtable module
-var BenchTable = require('benchtable');
-
-// Create benchtable suite
-var suite = new BenchTable();
+var Benchmark = require('benchmark');
+var suite = new Benchmark.Suite;
 
 const The73Calculator = require("./The73Calculator.js");
 
@@ -40,6 +37,9 @@ suite.add(The73Calculator.useif.name, () => {
     })
     .add(The73Calculator.usingObjectMap.name, () => {
         expectBehavior(The73Calculator.usingObjectMap);
+    })
+    .add(The73Calculator.usingIndexerDictionary.name, () => {
+        expectBehavior(The73Calculator.usingIndexerDictionary);
     })
     .add(The73Calculator.usingPolynom.name, () => {
         expectBehavior(The73Calculator.usingPolynom);

@@ -46,6 +46,10 @@ describe("The73Calculator", () => {
     test(The73Calculator.usingObjectMap.name, () => {
         expectBehavior(The73Calculator.usingObjectMap);
     });
+    test(The73Calculator.usingIndexerDictionary.name, () => {
+        expectBehavior(The73Calculator.usingIndexerDictionary);
+    });
+    
     test(The73Calculator.usingPolynom.name, () => {
         expectBehavior(The73Calculator.usingPolynom);
     });
