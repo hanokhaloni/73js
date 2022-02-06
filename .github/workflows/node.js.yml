@@ -12,6 +12,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./javascript
 
     strategy:
       matrix:
@@ -27,8 +30,6 @@ jobs:
         cache: 'npm'
         cache-dependency-path: javascript/package-lock.json
     
-    - run: pwd
-    - run: cd javascript
     - run: pwd
     - run: npm ci
     - run: npm run build --if-present
