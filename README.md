@@ -32,9 +32,9 @@ That's actually a good question. I guess that discovery does not happen with a s
 
 # How to run?
 
-from console, install jest
+from console, install with npm:
 ```
-npm install --save-dev jest
+npm install
 ```
 
 then you can just run the tests
