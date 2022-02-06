@@ -18,9 +18,9 @@ namespace _73dotnet
             { "division", The73Calculator.division},
             { "stringReplaceParseInt", The73Calculator.stringReplaceParseInt},
             { "usingModulo", The73Calculator.usingModulo},
-            { "usingObjectMap", The73Calculator.usingObjectMap},
+            { "usingObjectMap", The73Calculator.usingHashMap},
             { "usingIndexerDictionary", The73Calculator.usingIndexerDictionary},
-            { "usingPolynom", The73Calculator.usingPolynom},
+            { "usingPolynom", The73Calculator.usingPolynom}
 
         };
 
@@ -36,9 +36,8 @@ namespace _73dotnet
         [DataRow("usingObjectMap")]
         [DataRow("usingIndexerDictionary")]
         [DataRow("usingPolynom")]
-        [DataRow("fail")]
-        [DataRow("noop")]
         [DataTestMethod]
+
         public void TestThe73Methods(string methodNameToeTest)
         {
             var method = testMethods[methodNameToeTest];
@@ -47,8 +46,11 @@ namespace _73dotnet
 
         public void TestTheMethod(Func<int, int> f)
         {
-            Assert.AreEqual(7, f(3));
-            Assert.AreEqual(3, f(7));
+            for (int i = 0; i < 100000; i++)
+            {
+                Assert.AreEqual(7, f(3));
+                Assert.AreEqual(3, f(7));
+            }
         }
     }
 }

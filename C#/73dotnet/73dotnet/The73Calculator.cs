@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +7,21 @@ using System.Threading.Tasks;
 
 namespace _73dotnet
 {
-    class The73Calculator
+    public class The73Calculator
     {
+        static Hashtable hashtable = new Hashtable(){
+                {3,7},
+                {7,3}
+            };
+
+        static int[] p = { -1, -1, -1, 7, -1, -1, -1, 3 };
+
+        static Dictionary<int, int> dictionary = new Dictionary<int, int>(){
+                {3,7},
+                {7,3 }
+            };
+
+
         public static int useif(int n)
         {
             if (n == 3) return 7;
@@ -27,7 +41,6 @@ namespace _73dotnet
 
         public static int useArray(int n)
         {
-            int[] p = { -1, -1, -1, 7, -1, -1, -1, 3 };
             return p[n];
         }
 
@@ -65,31 +78,22 @@ namespace _73dotnet
             return ((n + 4) % 8);
         }
 
-        public static int usingObjectMap(int n)
+        public static int usingHashMap(int n)
         {
-            //    const objmapper = {
-            //    3: 7,
-            //    7: 3
-            //    };
-            //return objmapper[n];
-            return 5;
+            return (int)hashtable[n];
         }
 
         public static int usingIndexerDictionary(int n)
         {
-            //const dict = { };
 
-            //dict[3] = 7;
-            //dict[7] = 3;
-
-            //return dict[n];
-            return 5;
+            return dictionary[n];
         }
 
         public static int usingPolynom(int n)
         {
             return ((79 - (n * n)) / 10);
         }
+
 
         public static int fail(int n)
         {

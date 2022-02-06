@@ -5,9 +5,12 @@
     <RootNamespace>_73dotnet</RootNamespace>
 
     <IsPackable>false</IsPackable>
+
+    <StartupObject>_73dotnet.The73CalculatorBenchmark</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.13.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
     <PackageReference Include="MSTest.TestAdapter" Version="2.2.3" />
     <PackageReference Include="MSTest.TestFramework" Version="2.2.3" />
