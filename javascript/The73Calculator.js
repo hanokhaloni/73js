@@ -73,6 +73,11 @@ module.exports = class The73Calculator {
         return ((79 - (n * n)) / 10);
     }
 
+    static octal(n) {
+        let numberAsOctal = (n + 4).toString(8)
+        return parseInt(numberAsOctal) % 10;
+    }
+
     static fail(n) {
         return n;
     }

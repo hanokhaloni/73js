@@ -14,7 +14,8 @@ const testMEthods = [
     The73Calculator.usingModulo,
     The73Calculator.usingObjectMap,
     The73Calculator.usingIndexerDictionary,
-    The73Calculator.usingPolynom
+    The73Calculator.usingPolynom,
+    The73Calculator.octal
 ];
 
 describe.each(testMEthods)('With params for %s', (methodUnderTest) => {

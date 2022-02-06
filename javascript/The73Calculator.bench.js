@@ -44,6 +44,9 @@ suite.add(The73Calculator.useif.name, () => {
     .add(The73Calculator.usingPolynom.name, () => {
         expectBehavior(The73Calculator.usingPolynom);
     })
+    .add(The73Calculator.octal.name, () => {
+        expectBehavior(The73Calculator.octal);
+    })
     .add(The73Calculator.fail.name, () => {
         expectBehavior(The73Calculator.fail);
     })
