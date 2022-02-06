@@ -9,35 +9,34 @@ namespace _73dotnet
     {
         static new readonly Dictionary<string, Func<int, int>> testMethods = new Dictionary<string, Func<int, int>>()
         {
-            { "UseIf", The73Calculator.useif},
-            { "useifeq", The73Calculator.useifeq},
-            { "useXor", The73Calculator.useXor},
-            { "useArray", The73Calculator.useArray},
-            { "usingSwitch", The73Calculator.usingSwitch},
-            { "minus", The73Calculator.minus},
-            { "division", The73Calculator.division},
-            { "stringReplaceParseInt", The73Calculator.stringReplaceParseInt},
-            { "usingModulo", The73Calculator.usingModulo},
-            { "usingObjectMap", The73Calculator.usingObjectMap},
-            { "usingIndexerDictionary", The73Calculator.usingIndexerDictionary},
-            { "usingPolynom", The73Calculator.usingPolynom},
-
+            { nameof(The73Calculator.useif), The73Calculator.useif},
+            { nameof(The73Calculator.useifeq), The73Calculator.useifeq},
+            { nameof(The73Calculator.useXor), The73Calculator.useXor},
+            { nameof(The73Calculator.useArray), The73Calculator.useArray},
+            { nameof(The73Calculator.usingSwitch), The73Calculator.usingSwitch},
+            { nameof(The73Calculator.minus), The73Calculator.minus},
+            { nameof(The73Calculator.division), The73Calculator.division},
+            { nameof(The73Calculator.stringReplaceParseInt), The73Calculator.stringReplaceParseInt},
+            { nameof(The73Calculator.usingModulo), The73Calculator.usingModulo},
+            { nameof(The73Calculator.usingObjectMap), The73Calculator.usingObjectMap},
+            { nameof(The73Calculator.usingIndexerDictionary), The73Calculator.usingIndexerDictionary},
+            { nameof(The73Calculator.usingPolynom), The73Calculator.usingPolynom},
         };
 
-        [DataRow("UseIf")]
-        [DataRow("useifeq")]
-        [DataRow("useXor")]
-        [DataRow("useArray")]
-        [DataRow("usingSwitch")]
-        [DataRow("minus")]
-        [DataRow("division")]
-        [DataRow("stringReplaceParseInt")]
-        [DataRow("usingModulo")]
-        [DataRow("usingObjectMap")]
-        [DataRow("usingIndexerDictionary")]
-        [DataRow("usingPolynom")]
-        [DataRow("fail")]
-        [DataRow("noop")]
+        [DataRow(nameof(The73Calculator.useif))]
+        [DataRow(nameof(The73Calculator.useifeq))]
+        [DataRow(nameof(The73Calculator.useXor))]
+        [DataRow(nameof(The73Calculator.useArray))]
+        [DataRow(nameof(The73Calculator.usingSwitch))]
+        [DataRow(nameof(The73Calculator.minus))]
+        [DataRow(nameof(The73Calculator.division))]
+        [DataRow(nameof(The73Calculator.stringReplaceParseInt))]
+        [DataRow(nameof(The73Calculator.usingModulo))]
+        [DataRow(nameof(The73Calculator.usingObjectMap))]
+        [DataRow(nameof(The73Calculator.usingIndexerDictionary))]
+        [DataRow(nameof(The73Calculator.usingPolynom))]
+        [DataRow(nameof(The73Calculator.fail))]
+        [DataRow(nameof(The73Calculator.noop))]
         [DataTestMethod]
         public void TestThe73Methods(string methodNameToeTest)
         {
