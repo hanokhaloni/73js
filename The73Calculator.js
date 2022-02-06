@@ -68,6 +68,12 @@ module.exports = class The73Calculator {
         return n;
     }
 
-    static noop(n) {}
+    static octal(n) {
+        let numberAsOctal = (n + 4).toString(8)
+        numberAsOctal = parseInt(numberAsOctal) % 10
 
+        return numberAsOctal;
+    }
+
+    static noop(n) {}
 };
