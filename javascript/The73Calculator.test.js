@@ -1,66 +1,29 @@
 const The73Calculator = require("./The73Calculator.js");
 
-describe("The73Calculator", () => {
-    //const the73Calculator = new The73Calculator();
 
-    // const testMEthods = [
-    //     The73Calculator.useif,
-    //     The73Calculator.useXor,
-    //     The73Calculator.useArray,
-    //     The73Calculator.usingSwitch,
-    //     The73Calculator.minus,
-    //     The73Calculator.division,
-    //     The73Calculator.stringReplace
-    // ];
-    test(The73Calculator.useif.name, () => {
-        expectBehavior(The73Calculator.useif);
-    });
+const testMEthods = [
+    The73Calculator.useif,
+    The73Calculator.useifeq,
+    The73Calculator.useXor,
+    The73Calculator.useArray,
+    The73Calculator.usingSwitch,
+    The73Calculator.minus,
+    The73Calculator.division,
+    The73Calculator.stringReplaceParseInt,
+    The73Calculator.stringReplaceNumber,
+    The73Calculator.usingModulo,
+    The73Calculator.usingObjectMap,
+    The73Calculator.usingIndexerDictionary,
+    The73Calculator.usingPolynom
+];
 
-    test(The73Calculator.useifeq.name, () => {
-        expectBehavior(The73Calculator.useifeq);
+describe.each(testMEthods)('With params for %s', (methodUnderTest) => {
+    it(`${methodUnderTest.name} test`, () => {
+        expectBehavior(methodUnderTest);
     });
-    test(The73Calculator.useXor.name, () => {
-        expectBehavior(The73Calculator.useXor);
-    });
-    test(The73Calculator.useArray.name, () => {
-        expectBehavior(The73Calculator.useArray);
-    });
-    test(The73Calculator.usingSwitch.name, () => {
-        expectBehavior(The73Calculator.usingSwitch);
-    });
-    test(The73Calculator.minus.name, () => {
-        expectBehavior(The73Calculator.minus);
-    });
-    test(The73Calculator.division.name, () => {
-        expectBehavior(The73Calculator.division);
-    });
-    test(The73Calculator.stringReplaceParseInt.name, () => {
-        expectBehavior(The73Calculator.stringReplaceParseInt);
-    });
-    test(The73Calculator.stringReplaceNumber.name, () => {
-        expectBehavior(The73Calculator.stringReplaceNumber);
-    });
-    test(The73Calculator.usingModulo.name, () => {
-        expectBehavior(The73Calculator.usingModulo);
-    });
-    test(The73Calculator.usingObjectMap.name, () => {
-        expectBehavior(The73Calculator.usingObjectMap);
-    });
-    test(The73Calculator.usingIndexerDictionary.name, () => {
-        expectBehavior(The73Calculator.usingIndexerDictionary);
-    });
-    
-    test(The73Calculator.usingPolynom.name, () => {
-        expectBehavior(The73Calculator.usingPolynom);
-    });
-
-
-
-
-    function expectBehavior(f) {
-        expect(f(3)).toBe(7);
-        expect(f(7)).toBe(3);
-    }
-
-
 });
+
+function expectBehavior(f) {
+    expect(f(3)).toBe(7);
+    expect(f(7)).toBe(3);
+}

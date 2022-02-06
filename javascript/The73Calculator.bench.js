@@ -81,8 +81,3 @@ function expectBehavior(f) {
         f(7);
     }
 }
-
-// logs:
-// => RegExp#test x 4,161,532 +-0.99% (59 cycles)
-// => String#indexOf x 6,139,623 +-1.00% (131 cycles)
-// => Fastest is String#indexOf
