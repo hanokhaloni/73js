@@ -53,14 +53,12 @@ describe("The73Calculator", () => {
     test(The73Calculator.usingPolynom.name, () => {
         expectBehavior(The73Calculator.usingPolynom);
     });
-
-
-
+    test(The73Calculator.octal.name, () => {
+        expectBehavior(The73Calculator.octal);
+    });
 
     function expectBehavior(f) {
         expect(f(3)).toBe(7);
         expect(f(7)).toBe(3);
     }
-
-
 });
