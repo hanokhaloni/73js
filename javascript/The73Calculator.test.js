@@ -6,7 +6,7 @@ const testMEthods = [
     The73Calculator.useifeq,
     The73Calculator.useXor,
     The73Calculator.useArray,
-    The73Calculator.usingSwitch,
+    The73Calculator.useSwitch,
     The73Calculator.useSubstraction,
     The73Calculator.useDivision,
     The73Calculator.useStringReplaceParseInt,

@@ -13,7 +13,7 @@ namespace _73dotnet
             { "useifeq", The73Calculator.useifeq},
             { "useXor", The73Calculator.useXor},
             { "useArray", The73Calculator.useArray},
-            { "usingSwitch", The73Calculator.usingSwitch},
+            { "useSwitch", The73Calculator.useSwitch},
             { "useSubstraction", The73Calculator.useSubstraction},
             { "useDivision", The73Calculator.useDivision},
             { "useStringReplaceParseInt", The73Calculator.useStringReplaceParseInt},
@@ -28,7 +28,7 @@ namespace _73dotnet
         [DataRow("useifeq")]
         [DataRow("useXor")]
         [DataRow("useArray")]
-        [DataRow("usingSwitch")]
+        [DataRow("useSwitch")]
         [DataRow("useSubstraction")]
         [DataRow("useDivision")]
         [DataRow("useStringReplaceParseInt")]

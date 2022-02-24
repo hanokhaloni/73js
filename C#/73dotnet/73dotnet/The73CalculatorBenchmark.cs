@@ -43,7 +43,7 @@ namespace _73dotnet
         [Benchmark]
         public void usingSwitch()
         {
-            TestTheMethod(The73Calculator.usingSwitch);
+            TestTheMethod(The73Calculator.useSwitch);
         }
 
         [Benchmark]
