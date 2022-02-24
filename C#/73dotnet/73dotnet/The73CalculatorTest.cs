@@ -14,13 +14,13 @@ namespace _73dotnet
             { "useXor", The73Calculator.useXor},
             { "useArray", The73Calculator.useArray},
             { "usingSwitch", The73Calculator.usingSwitch},
-            { "minus", The73Calculator.minus},
-            { "division", The73Calculator.division},
-            { "stringReplaceParseInt", The73Calculator.stringReplaceParseInt},
-            { "usingModulo", The73Calculator.usingModulo},
-            { "usingObjectMap", The73Calculator.usingHashMap},
-            { "usingIndexerDictionary", The73Calculator.usingIndexerDictionary},
-            { "usingPolynom", The73Calculator.usingPolynom}
+            { "useSubstraction", The73Calculator.useSubstraction},
+            { "useDivision", The73Calculator.useDivision},
+            { "useStringReplaceParseInt", The73Calculator.useStringReplaceParseInt},
+            { "useModulo", The73Calculator.useModulo},
+            { "useObjectMap", The73Calculator.useHashMap},
+            { "useIndexerDictionary", The73Calculator.useIndexerDictionary},
+            { "usePolynom", The73Calculator.usePolynom}
 
         };
 
@@ -29,13 +29,13 @@ namespace _73dotnet
         [DataRow("useXor")]
         [DataRow("useArray")]
         [DataRow("usingSwitch")]
-        [DataRow("minus")]
-        [DataRow("division")]
-        [DataRow("stringReplaceParseInt")]
-        [DataRow("usingModulo")]
-        [DataRow("usingObjectMap")]
-        [DataRow("usingIndexerDictionary")]
-        [DataRow("usingPolynom")]
+        [DataRow("useSubstraction")]
+        [DataRow("useDivision")]
+        [DataRow("useStringReplaceParseInt")]
+        [DataRow("useModulo")]
+        [DataRow("useObjectMap")]
+        [DataRow("useIndexerDictionary")]
+        [DataRow("usePolynom")]
         [DataTestMethod]
 
         public void TestThe73Methods(string methodNameToeTest)

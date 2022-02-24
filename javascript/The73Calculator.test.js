@@ -7,15 +7,15 @@ const testMEthods = [
     The73Calculator.useXor,
     The73Calculator.useArray,
     The73Calculator.usingSwitch,
-    The73Calculator.minus,
-    The73Calculator.division,
-    The73Calculator.stringReplaceParseInt,
-    The73Calculator.stringReplaceNumber,
-    The73Calculator.usingModulo,
-    The73Calculator.usingObjectMap,
-    The73Calculator.usingIndexerDictionary,
-    The73Calculator.usingPolynom,
-    The73Calculator.octal
+    The73Calculator.useSubstraction,
+    The73Calculator.useDivision,
+    The73Calculator.useStringReplaceParseInt,
+    The73Calculator.useStringReplaceNumber,
+    The73Calculator.useModulo,
+    The73Calculator.useObjectMap,
+    The73Calculator.useIndexerDictionary,
+    The73Calculator.usePolynom,
+    The73Calculator.useOctalBase
 ];
 
 describe.each(testMEthods)('With params for %s', (methodUnderTest) => {

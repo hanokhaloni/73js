@@ -47,45 +47,45 @@ namespace _73dotnet
         }
 
         [Benchmark]
-        public void minus()
+        public void useSubstraction()
         {
-            TestTheMethod(The73Calculator.minus);
+            TestTheMethod(The73Calculator.useSubstraction);
         }
 
         [Benchmark]
-        public void division()
+        public void useDivision()
         {
-            TestTheMethod(The73Calculator.division);
+            TestTheMethod(The73Calculator.useDivision);
         }
 
         [Benchmark]
-        public void stringReplaceParseInt()
+        public void useStringReplaceParseInt()
         {
-            TestTheMethod(The73Calculator.stringReplaceParseInt);
+            TestTheMethod(The73Calculator.useStringReplaceParseInt);
         }
 
         [Benchmark]
-        public void usingModulo()
+        public void useModulo()
         {
-            TestTheMethod(The73Calculator.usingModulo);
+            TestTheMethod(The73Calculator.useModulo);
         }
 
         [Benchmark]
-        public void usingObjectMap()
+        public void useObjectMap()
         {
-            TestTheMethod(The73Calculator.usingHashMap);
+            TestTheMethod(The73Calculator.useHashMap);
         }
 
         [Benchmark]
-        public void usingIndexerDictionary()
+        public void useIndexerDictionary()
         {
-            TestTheMethod(The73Calculator.usingIndexerDictionary);
+            TestTheMethod(The73Calculator.useIndexerDictionary);
         }
 
         [Benchmark]
-        public void usingPolynom()
+        public void usePolynom()
         {
-            TestTheMethod(The73Calculator.usingPolynom);
+            TestTheMethod(The73Calculator.usePolynom);
         }
 
         [Benchmark]

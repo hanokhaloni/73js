@@ -44,7 +44,7 @@ namespace _73dotnet
             return p[n];
         }
 
-        public static int usingSwitch(int n)
+        public static int useSwitch(int n)
         {
             switch (n)
             {
@@ -57,39 +57,39 @@ namespace _73dotnet
             }
         }
 
-        public static int minus(int n)
+        public static int useSubstraction(int n)
         {
             return 10 - n;
         }
 
-        public static int division(int n)
+        public static int useDivision(int n)
         {
             return 21 / n;
         }
 
-        public static int stringReplaceParseInt(int n)
+        public static int useStringReplaceParseInt(int n)
         {
             return int.Parse("37".Replace(n.ToString(), ""));
         }
 
 
-        public static int usingModulo(int n)
+        public static int useModulo(int n)
         {
             return ((n + 4) % 8);
         }
 
-        public static int usingHashMap(int n)
+        public static int useHashMap(int n)
         {
             return (int)hashtable[n];
         }
 
-        public static int usingIndexerDictionary(int n)
+        public static int useIndexerDictionary(int n)
         {
 
             return dictionary[n];
         }
 
-        public static int usingPolynom(int n)
+        public static int usePolynom(int n)
         {
             return ((79 - (n * n)) / 10);
         }

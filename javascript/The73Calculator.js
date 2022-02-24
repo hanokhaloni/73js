@@ -21,7 +21,7 @@ module.exports = class The73Calculator {
         return mem[n];
     }
 
-    static usingSwitch(n) {
+    static useSwitch(n) {
         switch (n) {
             case 7:
                 return 3;
@@ -32,27 +32,27 @@ module.exports = class The73Calculator {
         }
     }
 
-    static minus(n) {
+    static useSubstraction(n) {
         return 10 - n;
     }
 
-    static division(n) {
+    static useDivision(n) {
         return 21 / n;
     }
 
-    static stringReplaceParseInt(n) {
+    static useStringReplaceParseInt(n) {
         return parseInt("37".replace(n, ""));
     }
 
-    static stringReplaceNumber(n) {
+    static useStringReplaceNumber(n) {
         return Number("37".replace(n, ""));
     }
 
-    static usingModulo(n) {
+    static useModulo(n) {
         return ((n + 4) % 8);
     }
 
-    static usingObjectMap(n) {
+    static useObjectMap(n) {
         const objmapper = {
             3: 7,
             7: 3
@@ -60,7 +60,7 @@ module.exports = class The73Calculator {
         return objmapper[n];
     }
 
-    static usingIndexerDictionary(n) {
+    static useIndexerDictionary(n) {
         const dict = {};
 
         dict[3] = 7;
@@ -69,13 +69,13 @@ module.exports = class The73Calculator {
         return dict[n];
     }
 
-    static usingPolynom(n) {
+    static usePolynom(n) {
         return ((79 - (n * n)) / 10);
     }
 
-    static octal(n) {
-        let numberAsOctal = (n + 4).toString(8)
-        return parseInt(numberAsOctal) % 10;
+    static useOctalBase(n) {
+        let numberAsuseOctalBase = (n + 4).toString(8)
+        return parseInt(numberAsuseOctalBase) % 10;
     }
 
     static fail(n) {

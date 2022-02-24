@@ -20,32 +20,32 @@ suite.add(The73Calculator.useif.name, () => {
     .add(The73Calculator.usingSwitch.name, () => {
         expectBehavior(The73Calculator.usingSwitch);
     })
-    .add(The73Calculator.minus.name, () => {
-        expectBehavior(The73Calculator.minus);
+    .add(The73Calculator.useSubstraction.name, () => {
+        expectBehavior(The73Calculator.useSubstraction);
     })
-    .add(The73Calculator.division.name, () => {
-        expectBehavior(The73Calculator.division);
+    .add(The73Calculator.useDivision.name, () => {
+        expectBehavior(The73Calculator.useDivision);
     })
-    .add(The73Calculator.stringReplaceParseInt.name, () => {
-        expectBehavior(The73Calculator.stringReplaceParseInt);
+    .add(The73Calculator.useStringReplaceParseInt.name, () => {
+        expectBehavior(The73Calculator.useStringReplaceParseInt);
     })
-    .add(The73Calculator.stringReplaceNumber.name, () => {
-        expectBehavior(The73Calculator.stringReplaceNumber);
+    .add(The73Calculator.useStringReplaceNumber.name, () => {
+        expectBehavior(The73Calculator.useStringReplaceNumber);
     })
-    .add(The73Calculator.usingModulo.name, () => {
-        expectBehavior(The73Calculator.usingModulo);
+    .add(The73Calculator.useModulo.name, () => {
+        expectBehavior(The73Calculator.useModulo);
     })
-    .add(The73Calculator.usingObjectMap.name, () => {
-        expectBehavior(The73Calculator.usingObjectMap);
+    .add(The73Calculator.useObjectMap.name, () => {
+        expectBehavior(The73Calculator.useObjectMap);
     })
-    .add(The73Calculator.usingIndexerDictionary.name, () => {
-        expectBehavior(The73Calculator.usingIndexerDictionary);
+    .add(The73Calculator.useIndexerDictionary.name, () => {
+        expectBehavior(The73Calculator.useIndexerDictionary);
     })
-    .add(The73Calculator.usingPolynom.name, () => {
-        expectBehavior(The73Calculator.usingPolynom);
+    .add(The73Calculator.usePolynom.name, () => {
+        expectBehavior(The73Calculator.usePolynom);
     })
-    .add(The73Calculator.octal.name, () => {
-        expectBehavior(The73Calculator.octal);
+    .add(The73Calculator.useOctalBase.name, () => {
+        expectBehavior(The73Calculator.useOctalBase);
     })
     .add(The73Calculator.fail.name, () => {
         expectBehavior(The73Calculator.fail);
