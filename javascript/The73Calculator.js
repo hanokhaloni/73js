@@ -8,7 +8,7 @@ module.exports = class The73Calculator {
 
     static useifeq(n) {
         if (n === 3) return 7;
-        return 4;
+        return 3;
     }
 
 
